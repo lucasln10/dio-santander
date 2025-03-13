@@ -13,14 +13,14 @@ public class Conta {
     private Long id;
 
     @Column(unique = true)
-    private Long numero;
+    private String numero;
 
     private Long agencia;
 
-    @Column(scale = 13, precision = 2)
+    @Column(scale = 13, precision = 17)
     private BigDecimal balanco;
 
-    @Column(name = "limite_adicional",scale = 13, precision = 2)
+    @Column(name = "limite_adicional", scale = 13, precision = 17)
     private BigDecimal limite;
 
     public Long getId() {
@@ -31,11 +31,11 @@ public class Conta {
         this.id = id;
     }
 
-    public Long getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(Long numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 

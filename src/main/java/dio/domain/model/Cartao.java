@@ -15,7 +15,7 @@ public class Cartao {
     @Column(unique = true)
     private String numero;
 
-    @Column(name = "limite_disponivel", scale = 13, precision = 2)
+    @Column(name = "limite_disponivel", scale = 13, precision = 17)
     private BigDecimal limite;
 
     public Long getId() {

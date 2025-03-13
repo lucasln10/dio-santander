@@ -15,6 +15,9 @@ public class Usuario {
 
     private String nome;
 
+    @Version
+    private Long version;
+
     @OneToOne(cascade = CascadeType.ALL)
     private Conta conta;
 
